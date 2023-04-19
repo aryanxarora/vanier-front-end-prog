@@ -1,1 +1,1 @@
-# Vanier-Front-End
+# Front End Web Programming (Vanier College)
