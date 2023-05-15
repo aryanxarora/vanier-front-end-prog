@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercedes Benz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/1200px-Mercedes-Logo.svg.png"
+        alt="Mercedes-Benz" width="50">
+      <h1>Mercedes Benz | Montreal</h1>
+    </div>
+    <div class="items">
+      <ul>
+        <li><a href="#">Heritage</a></li>
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="my-button" id="my-button">
+        <i id="burger" class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="my-nav">
+    <ul>
+      <li><a href="#">Heritage</a></li>
+      <li><a href="#">Inventory</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+</body>
+
+<script>
+  const button = document.getElementById("my-button");
+  const nav = document.getElementById("my-nav");
+  const burger = document.getElementById("burger");
+
+  button.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    burger.classList.toggle('fa-bars');
+    burger.classList.toggle('fa-times')
+  });
+</script>
+
+</html>
